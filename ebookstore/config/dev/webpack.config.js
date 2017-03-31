@@ -4,22 +4,22 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: '../../assets/index.html',
+  template: './client/index.html',
   filename: 'index.html',
   inject: 'body'
 });
 
 module.exports = {
-  entry: '../../client/index.js',
+  entry: './client/index.js',
   output: {
-    path: path.resolve('dependencies'),
-    filename: 'index_bundle.js'
+    path: path.resolve('./assets/'),
+    filename: 'js/dependencies/index_bundle.js'
   },
   module: {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
     ]
-  }
+  },
   plugins: [HtmlWebpackPluginConfig]
 }

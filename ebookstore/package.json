@@ -28,6 +28,7 @@
     "webpack": "^2.3.2"
   },
   "scripts": {
+    "dev-build": "webpack --config ./config/dev/webpack.config.js",
     "debug": "node debug app.js",
     "start": "node app.js"
   },
