@@ -1,0 +1,26 @@
+{
+  "name": "ebookstore",
+  "version": "1.0.0",
+  "description": "This is for demo purpose but can be nurtured for production application",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guptaaditya/ebookstore.git"
+  },
+  "keywords": [
+    "Ebookstore",
+    "buybookonline"
+  ],
+  "author": "Aditya Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guptaaditya/ebookstore/issues"
+  },
+  "homepage": "https://github.com/guptaaditya/ebookstore#readme",
+  "dependencies": {
+    "sails": "^0.12.13"
+  }
+}
