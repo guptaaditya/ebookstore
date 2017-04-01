@@ -1,4 +1,4 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './app'
-ReactDOM.render(<App />, document.getElementById('onlyelement'))
+import React from 'react';
+import ReactDOM from 'react-dom';
+import RoutesList from './routes/';
+ReactDOM.render(<RoutesList />, document.getElementById('onlyelement'))
