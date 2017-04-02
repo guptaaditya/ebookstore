@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import Book from '../book/'
+import BookCard from '../bookCard/'
 
 export class BookList extends Component {
   render(){
     return (
-      <Book />
+      <BookCard />
     )
   }
 };
