@@ -69,11 +69,11 @@ export class Header extends Component {
         <div className="col-sm-3 col-xs-6">
           <Modal show={this.state.showSignUpModal} title='Sign Up'
             body={SignUpForm} actionText='Complete' closeHandler={this.signUpClose} actionHandler={this.signUpSave}  />
-          <button type="button" className="btn btn-primary" onClick={this.openSignUp}>Sign Up</button>
+          <button type="button" className="btn btn-primary" onClick={this.signInClose}>Sign Up</button>
           &nbsp;&nbsp;
-          <Modal show={this.state.showSignInModal} title='Sign In'
+          <Modal modalWidth="25%" show={this.state.showSignInModal} title='Sign In'
             body={SignInForm} actionText='Submit' closeHandler={this.signInClose} actionHandler={this.signInSave}  />
-          <button type="button" className="btn btn-primary" onClick={this.openSignIn}>Sign In</button>
+          <button type="button" className="btn btn-primary" onClick={this.signInOpen}>Sign In</button>
         </div>
       </div>
     )
