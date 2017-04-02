@@ -12,7 +12,6 @@ export class Container extends Component {
     return (
       <div className="container" style={styles.fullWidthTemplate}>
         <Header />
-        <Modal />
         {this.props.children}
         <Footer />
       </div>

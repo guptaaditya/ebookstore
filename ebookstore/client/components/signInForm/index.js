@@ -8,11 +8,15 @@ export class SignInForm extends Component {
 
   render(){
     return (
-      <div className="row" style={{background: '#000'}}>
-        <Nav className="col-sm-offset-6 col-xs-offset-3 col-sm-3 col-xs-3"></Nav>
-        <div className="col-sm-3 col-xs-6">
+      <form name="loginForm" id="loginForm" method="post">
+        <div className="form-group">
+            <input className="form-control" id="userinfo" placeholder="Username" name="userinfo" type="text" autofocus />
         </div>
-      </div>
+        <div className="form-group">
+            <input className="form-control" id="password" placeholder="Password" name="password" type="password" value="" />
+        </div>
+        <input type="submit" className="btn btn-lg btn-success btn-block" value="Login" name="submitLogin" id="submitLogin" />
+      </form>
     )
   }
 };
