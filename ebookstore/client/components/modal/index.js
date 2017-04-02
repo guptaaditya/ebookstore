@@ -6,7 +6,7 @@ export class Modal extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: true,
+      show: props.show || false,
     }
     this.close = this.close.bind(this)
   }
@@ -40,6 +40,7 @@ export class Modal extends Component {
 };
 
 Modal.propTypes = {
+  show: React.PropTypes.bool.isRequired,
   title: React.PropTypes.string.isRequired,
   body: React.PropTypes.element.isRequired,
   actionText: React.PropTypes.string.isRequired,
@@ -47,6 +48,7 @@ Modal.propTypes = {
 }
 
 Modal.defaultProps = {
+  show: true,
   title: '',
   body: <div>&nbsp;Hi&nbsp;</div>,
   actionText: 'Save',
