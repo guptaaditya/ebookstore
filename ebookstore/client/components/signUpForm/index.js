@@ -8,10 +8,20 @@ export class SignUpForm extends Component {
 
   render(){
     return (
-      <div className="row" style={{background: '#000'}}>
-        <div className="col-sm-3 col-xs-6">
+      <form name="SignUpForm" id="SignUpForm" method="post">
+        <div className="form-group">
+            <input className="form-control" id="userinfo" placeholder="First Name" name="userinfo" type="text" />
         </div>
-      </div>
+        <div className="form-group">
+            <input className="form-control" id="userinfo" placeholder="Last Name" name="userinfo" type="text" />
+        </div>
+        <div className="form-group">
+            <input className="form-control" id="userinfo" placeholder="User Name" name="userinfo" type="text" />
+        </div>
+        <div className="form-group">
+            <input className="form-control" id="password" placeholder="Password" name="password" type="password" value="" />
+        </div>
+      </form>
     )
   }
 };
