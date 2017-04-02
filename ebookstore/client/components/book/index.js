@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 export class Book extends Component {
-  render(){
+  render() {
     return (
       <div className="container">
         <div style={{float :"left", width:"40%"}}>
