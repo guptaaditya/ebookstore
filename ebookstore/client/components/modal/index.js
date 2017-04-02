@@ -48,7 +48,7 @@ Modal.propTypes = {
 }
 
 Modal.defaultProps = {
-  show: true,
+  show: false,
   title: '',
   body: <div>&nbsp;Hi&nbsp;</div>,
   actionText: 'Save',
