@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 const _ = require('lodash')
 
-const logger = (event) => console.log(event)
+const logger = (event) => console.log('From modal component', event)
 
 export class Modal extends Component {
   constructor(props) {
@@ -21,7 +21,7 @@ export class Modal extends Component {
               <h4 className="modal-title">{this.props.title}</h4>
             </div>
             <div className="modal-body">
-              <Ecomponent />
+              <Ecomponent optionalMethod={this.props.optionalBodyProp} />
             </div>
             <div className="modal-footer">
               <button type="button" className="btn btn-default" data-dismiss="modal" onClick={this.props.closeHandler}>Close</button>
@@ -41,7 +41,8 @@ Modal.propTypes = {
   body: React.PropTypes.func.isRequired,
   actionText: React.PropTypes.string.isRequired,
   closeHandler: React.PropTypes.func.isRequired,
-  actionHandler: React.PropTypes.func.isRequired
+  actionHandler: React.PropTypes.func.isRequired,
+  optionalBodyProp: React.PropTypes.func
 }
 
 Modal.defaultProps = {
