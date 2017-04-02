@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
-
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import BookList from '../bookList/'
 
 export class Home extends Component {
   render(){
     return (
-      <BookList />
+      <BookList books={this.props.books} />
     )
   }
 };
-export default Home;
+
+const mapStateToProps = (state, ownProps) => { return {books: state.books}}
+export default connect(mapStateToProps)(Home);
