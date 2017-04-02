@@ -3,7 +3,14 @@ import React, { Component } from 'react'
 export class Book extends Component {
   render(){
     return (
-      <h1>Hello from Home!</h1>
+      <div>name</div>
+      <div>image</div>
+      <div>description</div>
+      <div>price</div>
+      <div>publish date</div>
+      <div>isbn</div>
+      <div>author</div>
+      <div>publication date</div>
     )
   }
 };
