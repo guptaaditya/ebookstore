@@ -1,5 +1,4 @@
 export default function book(state = [], action) {
-  debugger;
   switch(action.type) {
     case 'book/create':
       return [...state, Object.assign({}, action.book)]
