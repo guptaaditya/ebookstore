@@ -7,7 +7,7 @@ export class BookList extends Component {
       return <BookCard key={index} title={book.title} image={book.image} author={book.author} />
     });
     return (
-      <div className="container" style={{padding: '1%'}}>
+      <div className="row" style={{padding: '1%'}}>
         {books}
       </div>
     )
